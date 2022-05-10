@@ -1,0 +1,246 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #313131;
+}
+
+.header li {
+    padding-right: 46px;
+}
+
+.header a {
+    display: block;
+    text-transform: uppercase;
+    padding: 16px 0;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.header a:hover {
+    border-bottom: 2px solid #439eea;
+}
+
+.logo a {
+    font-size: 26px;
+    color: #5d5d5d;
+    font-weight: 500;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.contacts {
+    align-items: center;
+    font-family: "Open Sans";
+}
+
+.contacts p {
+    padding-left: 35px;
+}
+
+.contacts address {
+    font-size: 13px;
+    color: #000000;
+    font-style: normal;
+}
+
+.mail {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #3f83bc;
+    font-weight: 600;
+}
+
+.tel,
+.skype {
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.tel span {
+    font-weight: 700;
+}
+
+.callback {
+    background: #505559 url(../img/teacher.png) center/cover;    
+    padding: 115px 0;
+    position: relative;
+}
+
+.callback h1,
+.callback h2 {
+    color: #fcfcfc;
+    margin-bottom: 25px;
+    letter-spacing: 0.05em;
+}
+
+.callback h1 {
+    font-size: 30px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+}
+
+.callback h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Roboto";
+}
+
+.cta {
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #439eea;
+    color: #000;
+    font-weight: 500;
+    /* background-color: rgba(0,0,0,0); */
+    text-transform: uppercase;
+}
+
+.cta:hover {
+    background-color: #439eea;
+    color: #fff;
+}
+
+.about-teacher {
+    max-width: 808px;
+    line-height: 21px;
+    margin: 0 auto;
+}
+
+h3 {
+    margin: 60px;
+    font-size: 20px;
+    font-family: "Roboto Slab";
+    position: relative;
+}
+
+h3:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 60px;
+    top: 225%;
+    left: 46%;
+    background-color: #bfbfbf;
+}
+
+.about-teacher p {
+    line-height: 21px;
+}
+
+.services {
+    background-color: #f2f2f2;
+}
+
+.services .space-between {
+    justify-content: space-around;
+}
+
+.card {
+    max-width: 180px;
+}
+
+.services h3 {
+    padding-top: 60px;
+}
+
+.services h4 {
+    line-height: 21px;
+    padding-top: 150px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.icon:before {
+    content: '';
+    position: absolute;
+    left: 36px;
+    top: 10px;
+    width: 110px;
+    height: 110px;
+}
+
+.house:before {
+    background: url(../img/sprite.png) no-repeat 0 0;
+}
+
+.house:hover:before {
+    background-position: 0 -116px;
+}
+
+.diploma:before {
+    background: url(../img/sprite.png) no-repeat -114px 0;
+}
+
+.diploma:hover:before {
+    background-position: -114px -116px;
+}
+
+.books:before {
+    background: url(../img/sprite.png) no-repeat -228px 0;
+}
+
+.books:hover:before {
+    background-position: -228px -116px;
+}
+
+
+.services p {
+    line-height: 20px;
+    font-weight: 300;
+    font-style: italic;
+    padding-bottom: 55px;
+}
+
+.services h3:after {
+    top: 128%;
+    left: 46.5%;
+}
+
+.porfolio .cta {
+    margin-top: 30px;
+    color: #000000;
+}
+
+.porfolio .container .cta {
+    margin-left: 11px;
+    margin-bottom: 30px;
+    color: #000000;
+    text-transform: none;
+}
