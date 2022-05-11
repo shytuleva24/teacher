@@ -263,9 +263,30 @@ h2:after {
 }
 
 .photo {
-    background: #505559 url(../img/photos.png) center/cover;
+    background-color: #505559;
     height: 220px;
+    overflow: scroll;
 }
+
+/* .photo img {
+    transition: 1s;
+}
+
+.photo img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+} */
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 10px;
+    background-color: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 9em;
+}    
 
 .photo-reviews {
     max-width: 430px;
