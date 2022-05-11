@@ -197,6 +197,7 @@ h2:after {
     padding-top: 150px;
     padding-bottom: 18px;
     position: relative;
+    min-height: 210px;
 }
 
 .icon:before {
@@ -314,10 +315,9 @@ h2:after {
 }
 
 .name-reviews {
-    font-size: 14px;
     line-height: 18px;
     color: #000000;
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
 }
 
@@ -371,6 +371,7 @@ h2:after {
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 40px;
+    padding-right: 139px;
 }
 
 .footer p {
@@ -395,56 +396,94 @@ h2:after {
     padding: 20px 0;
 }
 
+.foot-social {
+    position: relative;
+}
+
+.before-add:before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: 9px;
+    height: 12px;
+    background: url(../img/sprite.png) no-repeat 0 -244px;
+}
+
+.before-tel:before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 98px;
+    width: 10px;
+    height: 10px;
+    background: url(../img/sprite.png) no-repeat 0 -257px;
+}
+
+.before-mail:before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 160px;
+    width: 18px;
+    height: 10px;
+    background: url(../img/sprite.png) no-repeat 0 -234px;
+}
+
 .social {
     width: 160px;
     height: 38px;
     position: relative;
 }
 
-.footer .icon:before {
-    content: '';
+.social-hov {
     position: absolute;
-    top: 0;
     width: 38px;
     height: 38px;
+    border-radius: 50%;
+    border: 2px solid #3f83bc;
+
 }
 
-.vk:before {
-    left: -30px;
-    background: url(../img/sprite.png) no-repeat -28px -232px;
+.vk {
+    left: -25px;
+    background: url(../img/vk.png) 8.8px no-repeat;
 }
 
-.vk:hover:before {
-    background-position: -28px -271px;
+.vk:hover {
+    background: url(../img/vkhov.png) 8.8px no-repeat;
+    background-color: #3f83bc;
 }
 
-.fb:before {
-    background: url(../img/sprite.png) no-repeat -68px -232px;
-    left: 12px;
+.fb {
+    left: 17px;
+    background: url(../img/fb.png) 12px no-repeat;
 }
 
-.fb:hover:before {
-    background-position: -68px -271px;
+.fb:hover {
+    background: url(../img/fbhov.png) 12px no-repeat;
+    background-color: #3f83bc;
 }
 
-
-.tw:before {
-    background: url(../img/sprite.png) no-repeat -108px -232px;
-    left: 54px;
+.tw {
+    left: 59px;
+    background: url(../img/tw.png) 10px no-repeat;
 }
 
-.tw:hover:before {
-    background-position: -108px -271px;
+.tw:hover {
+    background: url(../img/twhov.png) 10px no-repeat;
+    background-color: #3f83bc;
 }
 
-.gg:before {
-    background: url(../img/sprite.png) no-repeat -148px -232px;
-    left: 96px;
+.gg {
+    left: 101px;
+    background: url(../img/gg.png) 11px no-repeat;
 }
 
-.gg:hover:before {
-    background-position: -148px -271px;
+.gg:hover {
+    background: url(../img/gghov.png) 11px no-repeat;
+    background-color: #3f83bc;
 }
+
 
 .footinfo {
     max-width: 314px;
