@@ -26,14 +26,14 @@ ul {
     margin: 0;
 }
 
-h3 {
+h2 {
     margin-bottom: 60px;
     font-size: 20px;
     font-family: "Roboto Slab";
     position: relative;
 }
 
-h3:after {
+h2:after {
     content: "";
     position: absolute;
     height: 1px;
@@ -130,7 +130,7 @@ h3:after {
 }
 
 .callback h1,
-.callback h2 {
+.callback strong {
     color: #fcfcfc;
     margin-bottom: 25px;
     letter-spacing: 0.05em;
@@ -142,7 +142,8 @@ h3:after {
     font-weight: 400;
 }
 
-.callback h2 {
+.callback strong {
+    display: block;
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
@@ -224,11 +225,11 @@ h3:after {
 }
 
 .books:before {
-    background: url(../img/sprite.png) no-repeat -228px 0;
+    background: url(../img/sprite.png) no-repeat -227px 0;
 }
 
 .books:hover:before {
-    background-position: -228px -116px;
+    background-position: -227px -116px;
 }
 
 
@@ -275,7 +276,7 @@ h3:after {
 .photo-reviews > a > img {
     padding: 5px;
     filter: grayscale(100%);
-    transition: ;
+    transition: all .5s ease;
 }
 
 .photo-reviews > a > img:hover{
@@ -361,6 +362,7 @@ h3:after {
 .footer {
     background-color: #313131;
     text-align: left;
+    color: #5a5a5a;
 }
 
 .footer h4 {
@@ -378,6 +380,72 @@ h3:after {
     font-weight: 400;
 }
 
+.footer address {
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+.footer .tel {
+    font-size: 13px;
+    line-height: 20px;
+    color: #5a5a5a;
+}
+
+.footer .mail {
+    padding: 20px 0;
+}
+
+.social {
+    width: 160px;
+    height: 38px;
+    position: relative;
+}
+
+.footer .icon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 38px;
+    height: 38px;
+}
+
+.vk:before {
+    left: -30px;
+    background: url(../img/sprite.png) no-repeat -28px -232px;
+}
+
+.vk:hover:before {
+    background-position: -28px -271px;
+}
+
+.fb:before {
+    background: url(../img/sprite.png) no-repeat -68px -232px;
+    left: 12px;
+}
+
+.fb:hover:before {
+    background-position: -68px -271px;
+}
+
+
+.tw:before {
+    background: url(../img/sprite.png) no-repeat -108px -232px;
+    left: 54px;
+}
+
+.tw:hover:before {
+    background-position: -108px -271px;
+}
+
+.gg:before {
+    background: url(../img/sprite.png) no-repeat -148px -232px;
+    left: 96px;
+}
+
+.gg:hover:before {
+    background-position: -148px -271px;
+}
+
 .footinfo {
     max-width: 314px;
 }
@@ -391,11 +459,18 @@ h3:after {
 
 .last-photos img {
     padding: 5px;
+    filter: grayscale(100%);
+    transition: all .5s ease;
 }
 
+.last-photos img:hover{
+    filter: grayscale(0);
+}
+
+
 .copyright {
-  background-color: #f2f2f2;
-  font-size: 12px;
+    background-color: #f2f2f2;
+    font-size: 12px;
     line-height: 18px;
     color: #000000;
     font-weight: 400;
