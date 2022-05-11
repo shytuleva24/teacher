@@ -275,10 +275,11 @@ h3:after {
 .photo-reviews > a > img {
     padding: 5px;
     filter: grayscale(100%);
+    transition: ;
 }
 
 .photo-reviews > a > img:hover{
-    fill: grayscale(0);
+    filter: grayscale(0);
 }
 
 .review {
