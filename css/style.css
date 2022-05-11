@@ -129,6 +129,38 @@ h2:after {
     position: relative;
 }
 
+.callback-arrow {
+    border: 1px #b9bbbc solid;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 50.5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.callback-arrow:hover {
+    background-color: #3f83bc;
+    border: 0;
+}
+
+.arrowright {
+    left: 93%;
+    top: 45.5%;
+    transform: rotateY(180deg);
+}
+
+.callback-arrow::after {
+    content: url(../img/callarrow.png);
+    position: absolute;
+    top: 55%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+
+}
+
 .callback h1,
 .callback strong {
     color: #fcfcfc;
@@ -303,6 +335,8 @@ h2:after {
 
 .photo-reviews > a > img:hover{
     filter: grayscale(0);
+    transform: scale(1.2);
+    z-index: 2;
 }
 
 .review {
@@ -526,7 +560,6 @@ h2:after {
 .last-photos img:hover{
     filter: grayscale(0);
 }
-
 
 .copyright {
     background-color: #f2f2f2;
