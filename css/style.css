@@ -63,6 +63,48 @@ h2:after {
     background-color: #313131;
 }
 
+.search {
+  position: relative;
+  max-width: 220px;
+  margin: auto 0;
+}
+
+.search input, button {
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.search input {
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+  border: 1px solid #989898;
+}
+
+.search button {
+  border: none;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.search button:before {
+  content: url(../img/what.png);
+  position: absolute;
+  font-size: 12px;
+  left: -10px;
+  top: 9px;
+  color: #989898;
+}
+
+.search input:focus {
+  border: 2px solid #f2f2f2;
+}
+
 .header li {
     padding-right: 46px;
 }
