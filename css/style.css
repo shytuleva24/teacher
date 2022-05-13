@@ -103,20 +103,26 @@ h2:after {
     font-size: 13px;
     color: #000000;
     font-style: normal;
-}
-
-.mail {
-    font-size: 13px;
-    text-decoration: underline;
-    color: #3f83bc;
-    font-weight: 600;
+    cursor: pointer;
 }
 
 .tel,
-.skype {
+.skype,
+.mail {
     font-size: 13px;
     color: #000000;
     font-weight: 400;
+}
+
+.tel:hover,
+.skype:hover,
+.mail:hover, 
+address:hover {
+    text-decoration: underline;
+    color: #3f83bc;
+}
+.mail {
+    font-weight: 600;
 }
 
 .tel span {
@@ -436,19 +442,21 @@ h2:after {
     font-weight: 400;
 }
 
-.footer address {
+.before-add {
     font-style: normal;
     padding-bottom: 20px;
+    color: #5a5a5a;
 }
 
-.footer .tel {
+.ftel {
     font-size: 13px;
     line-height: 20px;
     color: #5a5a5a;
 }
 
-.footer .mail {
+.fmail {
     padding: 20px 0;
+    color: #5a5a5a;
 }
 
 .foot-social {
