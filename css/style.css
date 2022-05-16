@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+button {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -84,11 +88,11 @@ h2:after {
 
 .search button {
   border: none;
-  height: 12px;
-  width: 12px;
+  height: 30px;
+  width: 30px;
   position: absolute;
-  top: 0;
   right: 0;
+  top: 0;
   cursor: pointer;
 }
 
@@ -96,7 +100,7 @@ h2:after {
   content: url(../img/what.png);
   position: absolute;
   font-size: 12px;
-  left: -10px;
+  left: 10px;
   top: 9px;
   color: #989898;
 }
@@ -172,7 +176,7 @@ address:hover {
 }
 
 .callback {
-    background: #505559 url(../img/teacher.png) center/cover;    
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), #505559 url(../img/teacher.png) center/cover;    
     padding: 115px 0;
     position: relative;
 }
@@ -188,6 +192,7 @@ address:hover {
     transform: translate(-50%, -50%);
     cursor: pointer;
 }
+
 
 .callback-arrow:hover {
     background-color: #3f83bc;
@@ -430,6 +435,10 @@ address:hover {
     text-align: center;
     margin: 0 30px;
     cursor: pointer;
+}
+
+.arrow:hover {
+    filter: opacity(50%);
 }
 
 .arrow-right {
