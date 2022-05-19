@@ -43,7 +43,8 @@ h2:after {
     height: 1px;
     width: 60px;
     top: 55px;
-    left: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #bfbfbf;
 }
 
