@@ -509,6 +509,15 @@ button.cta1:hover {
     font-weight: 400;
 }
 
+.last-job {
+    font-size: 14px;
+    color: #989898;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
 .before-add {
     font-style: normal;
     padding-bottom: 20px;
