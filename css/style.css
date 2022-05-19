@@ -108,6 +108,11 @@ button {
   left: 10px;
   top: 9px;
   color: #989898;
+  transition: all .5s ease;
+}
+
+.search button:hover:before {
+    filter: hue-rotate(360deg);
 }
 
 .search input:focus {
@@ -386,7 +391,7 @@ button.cta1:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #cecece;
+    background-color: #439eea;
     border-radius: 9em;
 }    
 
