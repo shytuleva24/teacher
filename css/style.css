@@ -96,6 +96,10 @@ h2:after {
   cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+}
+
 .search button:before {
   content: url(../img/what.png);
   position: absolute;
@@ -244,6 +248,18 @@ address:hover {
     border-radius: 4px;
     background-color: #f7f7f7;
     border: 1px solid #e6e6e6;
+}
+
+.cta1 {
+    border: 1px solid #439eea;
+    background-color: #439eea;
+    color: #fff;
+}
+
+button.cta1:hover {
+    background-color: #f7f7f7;
+    border: 1px solid #e6e6e6;
+    color: #000;
 }
 
 .cta:hover {
