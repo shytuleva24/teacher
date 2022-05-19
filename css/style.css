@@ -89,30 +89,20 @@ h2:after {
 
 .search button {
   border: none;
-  height: 30px;
-  width: 30px;
+  height: 15px;
+  width: 15px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 7px;
+  top: 8px;
   cursor: pointer;
+  transition: all 1s ease;
+  background: url(../img/what.png) no-repeat;
+
 }
 
-button {
-    cursor: pointer;
-}
-
-.search button:before {
-  content: url(../img/what.png);
-  position: absolute;
-  font-size: 12px;
-  left: 10px;
-  top: 9px;
-  color: #989898;
-  transition: all .5s ease;
-}
-
-.search button:hover:before {
-    filter: hue-rotate(360deg);
+.search button:hover {
+    transform: rotate(380deg);
+    background: url(../img/what-hover.png) no-repeat;
 }
 
 .search input:focus {
@@ -367,6 +357,7 @@ button.cta1:hover {
 
 .reviews {
     padding-top: 60px;
+    padding-bottom: 210px;
 }
 
 .photo {
@@ -399,38 +390,75 @@ button.cta1:hover {
     max-width: 430px;
     margin: 0 auto;
     justify-content: center; 
-    align-items: center
+    align-items: center;
+    position: relative;
 }
 
-.photo-reviews > a > img {
-    padding: 5px;
+.students img {
     filter: grayscale(100%);
+    transition: all .5s ease;
+    margin: 0 10px;
+}
+
+.students img:hover{
+    filter: grayscale(0);
+    transform: scale(1.2);
+    z-index: 2; 
+}
+
+.students a {
+    position: relative;
     transition: all .5s ease;
 }
 
-.photo-reviews > a > img:hover{
-    filter: grayscale(0);
-    transform: scale(1.2);
-    z-index: 2;
+.students a:hover + .coments {
+    display: block;
 }
 
-.review {
+.students a:hover:before {
+    display: block;
+}
+
+.coments.active {
+    display: block;
+}
+
+.coments {
+    display: none;
+    position: absolute;
+    color: #000000;
+    font-weight: 300;
+    font-style: italic;
+    width: 500px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.coment-text {
+    top: 100%;
+    padding: 20px 0;
+    border-radius: 4px;
+    margin: 30px auto 25px;
     background-color: #f7f7f7;
     border: 1px solid #e6e6e6;
     font-size: 13px;
     line-height: 18px;
-    color: #000000;
-    font-weight: 300;
-    font-style: italic;
-    max-width: 500px;
-    margin: 30px auto 25px;
-    position: relative;
-    z-index: 2;
-    padding: 20px 0;
-    border-radius: 4px;
+    min-height: 96px;
 }
 
-.review::before {
+.coment-autor {
+    line-height: 18px;
+    top: 200%;
+    width: 500px;
+    z-index: 2;
+    color: #000000;
+    font-weight: 600;
+    background-color: #f2f2f2;
+}
+
+.coment::before {
+    display: none;
     content: "";
     position: absolute;
     width: 15px;
@@ -438,17 +466,10 @@ button.cta1:hover {
     background-color: #f7f7f7;
     border-right: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
-    transform: rotate(225deg);
-    z-index: 1;
-    top: -8px;
-    left: 50%
-}
-
-.name-reviews {
-    line-height: 18px;
-    color: #000000;
-    font-weight: 600;
-    font-style: italic;
+    transform: rotate(225deg) translateX(64%);
+    z-index: 10;
+    top: 104px;
+    left: 50%;
 }
 
 .arrow {
@@ -457,10 +478,11 @@ button.cta1:hover {
     text-align: center;
     margin: 0 30px;
     cursor: pointer;
+    filter: opacity(50%);
 }
 
 .arrow:hover {
-    filter: opacity(50%);
+    filter: opacity(100%);
 }
 
 .arrow-right {
