@@ -296,7 +296,6 @@ button.cta1:hover {
     position: relative;
     padding-bottom: 18px;
     padding-top: 135px;
-    cursor: pointer;
 }
 
 .icon {
@@ -308,6 +307,7 @@ button.cta1:hover {
     transform: translateX(-50%);
     border-radius: 50%;
     border: 3px solid #439eea;
+    z-index: 2;
 }
 
 .icon:hover {
