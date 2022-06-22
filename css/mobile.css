@@ -1,0 +1,178 @@
+@media screen and (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+    .container {
+        max-width: 94%;
+    }
+    .header ul.space-between {
+        display: none;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .sub-menu{
+        display: inline-block;
+        cursor: pointer;
+        margin: 8px 0;
+    }
+
+    ul.tel-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #313131;
+        z-index: 1;
+    }
+    
+    ul.tel-menu li {
+        padding: 0;
+        width: 100%;
+        text-decoration: none;
+
+    }
+    
+    .bar {
+        width: 35px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6.3px 0;
+        border-radius: 2px;
+    }
+
+    .contacts address,
+    .contacts .address,
+    .contacts .mail,
+    .contacts .skype,
+    .callback-arrow,
+    .card p,
+    .footinfo {
+        display: none;
+    }
+
+    .contacts p {
+        padding: 0;
+    }
+
+    .callback strong {
+        width: 90%;
+        margin: 0 auto 25px;
+        font-size: 0.9em;
+    }
+
+    .about-teacher p {
+        width: 90%;
+        margin: 0 auto;
+        line-height: 1.8em;
+    }
+
+    .services .space-between {
+        flex-wrap: wrap
+    }
+
+    .card {
+        width: 180px;
+    }
+
+    .card h4 {
+        padding-bottom: 33px;
+    }
+    
+    .porfolio .cta {
+        margin-top: 0;
+    }
+
+    .porfolio button.mcta {
+        margin-top: 25px;
+    }
+
+    .student4,
+    .student3 {
+        display: none;
+    }
+    
+    .students img {
+        margin: 0 5px;
+    }
+
+    .arrow {
+        margin: 0 10px;
+    }
+
+    .coments {
+        width: 100%;
+    }
+
+    .help p {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .footer .space-between {
+        width: 86%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .footer h4 {
+        padding-bottom: 20px;
+    }
+    
+    .last-job {
+        padding-bottom: 20px;
+    }
+    
+    .last-photos {
+        min-width: 250px;
+    }
+
+    .last-photos img {
+    padding: 15px 10px 0 0;    
+    }
+
+    .footinfo {
+        padding-bottom: 20px;
+    }
+
+    .social-info {
+        padding-left: 25px;
+    }
+
+    .foot-social > .social-info > p > a:before, 
+    .foot-social address:before {
+        left: 0;
+    }
+
+    .before-tel:before {
+        top: 78px;
+    }
+    
+    .before-mail:before {
+        top: 140px;
+    }
+
+    .vk {
+        left: -27px;
+    }
+
+    .fb {
+        left: 20px;
+    }
+
+    .tw {
+        left: 68px;
+    }
+
+    .gg {
+        left: 114px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    
+}

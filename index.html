@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="whidth=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimu-scale=1.0">
     <title>Обучение английского, учитель английского</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" media="screen and (min-width:900px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="smallscreen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu:wght@500&display=swap" rel="stylesheet"><body>
     <header>
         <section class="header">
             <nav class="container space-between">
-                <ul class="space-between">
+                <div class="sub-menu">
+                    <div class="icon-menu" id="iconMenu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul id="subMenu" class="tel-menu space-between">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#about-teacher">Обо мне</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#porfolio">Портфолио</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                    </ul>
+                </div>
+                <ul class="menu space-between">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="#about-teacher">Обо мне</a></li>
                     <li><a href="#services">Услуги</a></li>
@@ -30,10 +49,10 @@
                 <p><a href="index.html">Teacher</a></p>
             </div>
             <div class="contacts space-between">
-                <p><address>Москва, ул. Победы 48</address></p>
-                <p><a class="mail" href="mailto:teacher@gmail.ru">teacher@gmail.ru</a></p>
-                <p><a class="tel" href="tel:+74995323236">+7 (499) <span>532 32 36</span></a></p>
-                <p><a class="skype" href="skype:Teacher">Skype: Teacher</a></p>
+                <p class="address"><address>Москва, ул. Победы 48</address></p>
+                <p class="mail"><a class="mail" href="mailto:teacher@gmail.ru">teacher@gmail.ru</a></p>
+                <p class="tel"><a href="tel:+74995323236">+7 (499) <span>532 32 36</span></a></p>
+                <p class="skype"><a href="skype:Teacher">Skype: Teacher</a></p>
             </div>
         </section>
     </header>
@@ -100,14 +119,14 @@
                 <img src="img/4.png" alt="">
                 <img src="img/5.png" alt="">
             </div>
-            <button class="cta">Смотреть все</button>
+            <button class="cta mcta">Смотреть все</button>
         </section>
         <section class="reviews">
             <div class="container">
                 <h2>Отзывы клиентов</h2>
                 <div class="photo-reviews space-between">
                     <img class="arrow" src="img/arrow.png" alt="">
-                    <div class="students">
+                    <div class="students student1">
                         <a class="coment" href="#"><img src="img/reviews.png" alt="Фото клиента"></a>
                         <div class="coments active">
                         <p class="coment-text">
@@ -119,18 +138,18 @@
                         <p class="coment-autor">Ирина Возная</p>
                         </div>
                     </div>
-                    <div class="students">
+                    <div class="students student2">
                         <a class="coment" href="#"><img src="img/reviews.png" alt="Фото клиента"></a>
                         <div class="coments">
                         <p class="coment-text">
                             Подтянули разговорный английский, выучили 
                             множество слов, грамматику. Репетитор корректна, сдержана, приятна в общении. 
-                            Благодарим за работу и очень рады знакомству.
+                            Благодарим за работу и очень рады.
                         </p>
                         <p class="coment-autor">Наталья Василенко</p>
                         </div>
                     </div>
-                    <div class="students">
+                    <div class="students student3">
                         <a class="coment" href="#"><img src="img/reviews.png" alt="Фото клиента"></a>
                         <div class="coments">
                         <p class="coment-text">
@@ -141,7 +160,7 @@
                             <p class="coment-autor">Татьяна Совєтова</p>
                         </div>
                     </div>
-                    <div class="students">
+                    <div class="students student4">
                         <a class="coment" href="#"><img src="img/reviews.png" alt="Фото клиента"></a>
                         <div class="coments">
                         <p class="coment-text">
@@ -192,15 +211,17 @@
             </div>
             <div class="foot-social">
                 <h4>контакты</h4>
-                <p><address class="before-add">Москва, ул. Победы 48</address></p>
-                <p><a class="tel ftel before-tel" href="tel:+79261234567">+7 926 123 45 67,</span></a></p>
-                <p><a class="tel ftel" href="tel:+74821234567">+7 482 123 45 67</span></a></p>
-                <p><a class="mail fmail before-mail" href="mailto:teacher@gmail.ru">teacher@gmail.ru</a></p>
-                <div class="space-between social">
-                    <a href="#" class="vk social-hov"></a>
-                    <a href="#" class="fb social-hov"></a>
-                    <a href="#" class="tw social-hov"></a>
-                    <a href="#" class="gg social-hov"></a>
+                <div class="social-info">
+                    <p><address class="before-add">Москва, ул. Победы 48</address></p>
+                    <p><a class="tel ftel before-tel" href="tel:+79261234567">+7 926 123 45 67,</span></a></p>
+                    <p><a class="tel ftel" href="tel:+74821234567">+7 482 123 45 67</span></a></p>
+                    <p><a class="mail fmail before-mail" href="mailto:teacher@gmail.ru">teacher@gmail.ru</a></p>
+                    <div class="space-between social">
+                        <a href="#" class="vk social-hov"></a>
+                        <a href="#" class="fb social-hov"></a>
+                        <a href="#" class="tw social-hov"></a>
+                        <a href="#" class="gg social-hov"></a>
+                    </div>
                 </div>
             </div>
         </section>
