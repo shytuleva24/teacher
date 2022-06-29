@@ -8,10 +8,11 @@ button {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
     margin: 0;
-    text-align: center;
+    padding-top: 49px;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
+    text-align: center;
 }
 
 section {
@@ -65,10 +66,16 @@ h2:after {
 }
 
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
     background-color: #313131;
+    z-index: 10;
 }
 
-.sub-menu {
+
+.hamburger {
     display: none;
 }
 
@@ -113,11 +120,11 @@ h2:after {
     box-shadow: inset 0 0 1px 1px #f2f2f2;
 }
 
-.header li {
+.menu li {
     padding-right: 46px;
 }
 
-.header a {
+.menu a {
     display: block;
     text-transform: uppercase;
     padding: 16px 0;
@@ -191,9 +198,9 @@ address:hover {
     height: 40px;
     border-radius: 50%;
     position: absolute;
-    left: 5%;
-    top: 50.5%;
-    transform: translate(-50%, -50%);
+    transform: rotateY(180deg);
+    right: 2%;
+    top: 50%;
     cursor: pointer;
 }
 
@@ -204,9 +211,9 @@ address:hover {
 }
 
 .arrowright {
-    left: 93.5%;
-    top: 45.5%;
-    transform: rotateY(180deg);
+    left: 2%;
+    top: 50%;
+    transform: rotateY(0deg);
 }
 
 .callback-arrow::after {
@@ -735,3 +742,4 @@ button.cta1:hover {
     font-weight: 400;
     padding: 10px;
 }
+
