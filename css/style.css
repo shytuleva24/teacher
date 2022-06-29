@@ -721,11 +721,12 @@ button.cta1:hover {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    max-width: 240px;
+    width: 240px;
 }
 
 .last-photos img {
     padding: 5px;
+    width: 100%;
     filter: grayscale(100%);
     transition: all .5s ease;
 }

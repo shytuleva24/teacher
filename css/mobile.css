@@ -172,14 +172,19 @@
     
     .last-job {
         padding-bottom: 20px;
+        width: 100%;
     }
     
     .last-photos {
-        min-width: 250px;
+        width: 100%;
+    }
+
+    .last-photos a {
+        width: 45%;
     }
 
     .last-photos img {
-        padding: 15px 10px 0 0;    
+        padding: 13px 15px 0 0;
     }
 
     .footinfo {
